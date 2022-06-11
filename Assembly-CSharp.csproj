@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\PlayerScript.cs" />
+     <Compile Include="Assets\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
      <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
      <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
      <None Include="Assets\Mirror\Version.txt" />
@@ -287,14 +288,8 @@
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="NSubstitute">
- <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
- </Reference>
- <Reference Include="Mono.CecilX.Mdb">
- <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
+ <Reference Include="Mono.CecilX.Rocks">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
  </Reference>
  <Reference Include="Mono.CecilX.Pdb">
  <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
@@ -302,14 +297,20 @@
  <Reference Include="Mono.CecilX">
  <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
  </Reference>
- <Reference Include="Mono.CecilX.Rocks">
- <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
+ <Reference Include="Castle.Core">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="NSubstitute">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Tests/Common/NSubstitute.dll</HintPath>
  </Reference>
  <Reference Include="System.Threading.Tasks.Extensions">
  <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Tests/Common/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Castle.Core">
- <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Tests/Common/Castle.Core.dll</HintPath>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="Mono.CecilX.Mdb">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -695,24 +696,26 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ProGrids.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>C:/Users/ROG/RiderProjects/BeanMP/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Telepathy.csproj">
-      <Project>{f7fc2797-3274-11cf-1f80-f6e2e9995aeb}</Project>
-      <Name>Telepathy</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{176220dd-b105-6acf-8b29-2e43ad30bc6d}</Project>
-      <Name>Mirror.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{d56b9f7c-ef0c-faa6-a880-d25efded363d}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{492b1282-3041-674b-e161-299b59e79585}</Project>
-      <Name>Mirror.CompilerSymbols</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.csproj">
       <Project>{e88b8861-abe5-002d-82a2-e4144ce3f21e}</Project>
       <Name>Mirror</Name>
@@ -725,21 +728,37 @@
       <Project>{671b528e-5e32-9026-62ef-e4642b1d6d65}</Project>
       <Name>Mirror.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="where-allocations.csproj">
-      <Project>{190dfc4d-47c0-199a-b5c3-36f40118a176}</Project>
-      <Name>where-allocations</Name>
-    </ProjectReference>
     <ProjectReference Include="WeaverTestExtraAssembly.csproj">
       <Project>{32d6cc0a-4277-2fc0-b319-b1abbf333999}</Project>
       <Name>WeaverTestExtraAssembly</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
+      <Project>{492b1282-3041-674b-e161-299b59e79585}</Project>
+      <Name>Mirror.CompilerSymbols</Name>
     </ProjectReference>
     <ProjectReference Include="Mirror.Authenticators.csproj">
       <Project>{28d033c5-0775-a7c2-7d56-0af08d3a5f8d}</Project>
       <Name>Mirror.Authenticators</Name>
     </ProjectReference>
+    <ProjectReference Include="Telepathy.csproj">
+      <Project>{f7fc2797-3274-11cf-1f80-f6e2e9995aeb}</Project>
+      <Name>Telepathy</Name>
+    </ProjectReference>
+    <ProjectReference Include="where-allocations.csproj">
+      <Project>{190dfc4d-47c0-199a-b5c3-36f40118a176}</Project>
+      <Name>where-allocations</Name>
+    </ProjectReference>
     <ProjectReference Include="SimpleWebTransport.csproj">
       <Project>{8f2a304a-35c8-7ff6-c61d-cc55cede9925}</Project>
       <Name>SimpleWebTransport</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Components.csproj">
+      <Project>{176220dd-b105-6acf-8b29-2e43ad30bc6d}</Project>
+      <Name>Mirror.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.csproj">
+      <Project>{d56b9f7c-ef0c-faa6-a880-d25efded363d}</Project>
+      <Name>Mirror.Examples</Name>
     </ProjectReference>
     <ProjectReference Include="ParrelSync.csproj">
       <Project>{ce6da869-bbc3-e85f-edaa-884c9d462b60}</Project>

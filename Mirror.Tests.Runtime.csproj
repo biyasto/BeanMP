@@ -52,11 +52,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mirror\Tests\Runtime\NetworkIdentityTests.cs" />
      <Compile Include="Assets\Mirror\Tests\Runtime\ClientSceneTests_Runtime_RegisterPrefab.cs" />
+     <Compile Include="Assets\Mirror\Tests\Runtime\NetworkManagerTests.cs" />
+     <Compile Include="Assets\Mirror\Tests\Runtime\NetworkIdentityTests.cs" />
      <Compile Include="Assets\Mirror\Tests\Runtime\ClientSceneTests_LocalPlayer.cs" />
      <Compile Include="Assets\Mirror\Tests\Runtime\ClientSceneTests_DestroyAllClientObjects.cs" />
-     <Compile Include="Assets\Mirror\Tests\Runtime\NetworkManagerTests.cs" />
      <Compile Include="Assets\Mirror\Tests\Runtime\NetworkServerRuntimeTest.cs" />
      <Compile Include="Assets\Mirror\Tests\Runtime\ClientSceneTests_LocalPlayer_AsHost.cs" />
      <None Include="Assets\Mirror\Tests\Runtime\Mirror.Tests.Runtime.asmdef" />
